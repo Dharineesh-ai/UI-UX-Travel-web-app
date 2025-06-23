@@ -1,3 +1,5 @@
+"use client";
+
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
@@ -24,6 +26,10 @@ const Navbar = () => {
           title="Login"
           icon="/user.svg"
           variant="btn_dark_green"
+          onClick={() => {
+            console.log('Login button clicked');
+            // TODO: Add actual login logic here
+          }}
         />
       </div>
 
